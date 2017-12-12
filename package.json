@@ -18,11 +18,16 @@
   },
   "homepage": "https://github.com/chingu-voyage3/bears-11#readme",
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.7",
+=======
+    "concurrently": "^3.5.1",
+    "dotenv": "^4.0.0",
+>>>>>>> f1349cd414cf4502ed404a27a8f3dc5bdbb8be99
     "express": "^4.16.2",
     "mongoose": "^4.13.6",
     "mongoose-findorcreate": "^2.0.0",
