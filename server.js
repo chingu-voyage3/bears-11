@@ -1,11 +1,12 @@
 var express = require("express");
 var bodyParser = require("body-parser");
+const dotenv = require('dotenv');
+
+dotenv.load();
+
 var githubRoute = require("./routes/githubAuth");
 var routes = require("./routes/routes")
 var app = express();
-
-//added body parser, ejs, and cookie-sessions to package.JSON
-
 
 //middleware
 app.set('view engine', 'ejs');

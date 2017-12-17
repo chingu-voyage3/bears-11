@@ -35,9 +35,9 @@ passport.deserializeUser((id, done)=>{
 
 
 passport.use(new GithubStrategy({
-  clientID: "CLIENTID",
-  clientSecret: "CLIENTSECRET",
-  callbackURL: "http://127.0.0.1:3000/auth/github/callback"
+  clientID: process.env.CLIENT_ID,
+  clientSecret: process.env.CLIENT_SECRET,
+  callbackURL: process.env.CALLBACK_URL
 },
 function(token, tokenSecret, profile, done) {
 //Callback... Finds current profile if exists else it creates new.
