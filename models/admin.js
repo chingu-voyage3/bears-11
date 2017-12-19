@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 //uri
-var uri = "MONGODB URI GOES HERE";
+var uri = process.env.MONGODB_URI;
 
 //connect to mongoDB
 mongoose.connect(uri)
