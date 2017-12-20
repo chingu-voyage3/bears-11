@@ -10,6 +10,7 @@ var app = express();
 
 //middleware
 app.set('view engine', 'ejs');
+app.set('views', './backend/views')
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
