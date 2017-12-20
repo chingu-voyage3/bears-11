@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel-node tools/build.js",
+    "clean-dist": "npm run remove-dist && mkdir dist",
+    "remove-dist": "rimraf ./dist",
+    "open:src": "babel-node tools/srcServer.js",
+    "open:dist": "babel-node tools/distServer.js"
   },
   "repository": {
     "type": "git",
@@ -37,5 +42,50 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "stage-1"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ],
+          "react-hmre"
+        ]
+      },
+      "production": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "browsers": ["last 2 Chrome versions"]
+              },
+              "es2015": {
+                "modules": false
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          "transform-react-constant-elements",
+          "transform-react-remove-prop-types"
+        ]
+      },
+      "test": {
+        "presets": [
+          "env"
+        ]
+      }
+    }
   }
 }
