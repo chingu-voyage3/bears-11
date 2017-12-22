@@ -9,7 +9,8 @@
     "clean-dist": "npm run remove-dist && mkdir dist",
     "remove-dist": "rimraf ./dist",
     "open:src": "babel-node tools/srcServer.js",
-    "open:dist": "babel-node tools/distServer.js"
+    "open:dist": "babel-node tools/distServer.js",
+    "lint": "eslint . --ext .js,.jsx"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "escope": "^3.6.0",
     "eslint": "^4.1.1",
     "eslint-config-react-app": "^2.0.1",
     "eslint-plugin-flowtype": "^2.34.1",
