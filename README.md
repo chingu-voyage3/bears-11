@@ -1,5 +1,21 @@
-<<<<<<< HEAD
-# bears11chingu
-=======
-# bears-11
->>>>>>> f1349cd414cf4502ed404a27a8f3dc5bdbb8be99
+#Bears-11 Sample
+
+https://glitter-coil.glitch.me/
+^Link to glitch.com sample.
+
+Hey Guys,
+
+I made this today from scratch.
+
+All the fronend is in the src folder and its all broken down into components.
+The main place to look is ProjectBox and its subcomponents.
+
+Additionally, I added some backend in the models folder.
+
+What I did not do was add user authentication. I figure we have a couple places to go from here depending on how we want to do things: 
+1) Let anyone submit project ideas.
+2) Require a code to access the ideas submission screen. This avoids user authentication altogether, but restricts still restricts access.
+3) Actually create user authentication with a profile dashboard, user authority, etc -- Which is totally possible, we would just have to put the work in.
+
+ 
+
