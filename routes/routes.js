@@ -12,7 +12,7 @@ router.get("/",(req,res)=>{
     res.sendFile(__dirname+"/build/index.html")
 });
 
-//new idea
+//new idea. See models folder for Mongoose Schemas.
 router.post('/submitIdea',(req,res)=>{
     new Idea({
         name: req.body.name,

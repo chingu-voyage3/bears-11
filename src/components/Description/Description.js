@@ -2,19 +2,20 @@ import React from 'react';
 import './Description.css';
 
 class Description extends React.Component{
+    callbackToAppJs(){
+        this.props.showAbout();
+    }
     render(){
         return(
             <div className="description">
+            <button onClick={this.callbackToAppJs.bind(this)} className="aboutBtn">
+            About
+            </button>
                 <h1 className="title">
-                     Provocateur
+                     Coding Project Idea Generator
                     </h1>
                     <em>Chingu Projects Challenger Picker</em>
-                        <br/>
-                        <h3> 
-                            If you're like us, picking projects as a team is hard.<br/>
-                            Don't you wish someone could <strong>pick for you?</strong>
-                            </h3>
-                            
+                    <br/>   
                 </div>
         )
     }
