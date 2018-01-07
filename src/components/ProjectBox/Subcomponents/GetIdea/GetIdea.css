@@ -27,3 +27,15 @@
 .new-idea{
     background-color: #ffab3d;
 }
+.link-box{
+    max-width: 90%;
+    overflow-x: auto;
+    border: 1px dotted grey;
+    margin: auto;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .outline{
+      width: 80%;
+  }
+}

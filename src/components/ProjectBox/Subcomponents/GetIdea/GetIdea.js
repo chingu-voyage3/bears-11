@@ -50,9 +50,9 @@ class GetIdea extends React.Component{
                 <h2>
                     Example:
                     </h2>
-                <textbox>
+                <p className = "link-box">
                     {idea.link}
-                    </textbox>    
+                    </p>    
                 </div>
         )
     }

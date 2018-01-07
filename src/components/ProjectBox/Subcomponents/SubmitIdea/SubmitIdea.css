@@ -21,3 +21,9 @@
     outline: none;
     border-radius: 10px;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .outline{
+      width: 80%;
+  }
+}
