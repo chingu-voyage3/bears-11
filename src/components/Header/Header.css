@@ -1,7 +1,10 @@
 .header{
-    background-color: #5b9aff;
+    background-color: #D66436;
     top: 0;
     left: 0;
     height: 5vh;
     width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
 }

@@ -3,6 +3,9 @@ import './GetIdea.css';
 /*https://api.mlab.com/api/1/databases/bears11/collections/ideas?apiKey=PW2ys0vyNkPOEltLYg4USjGExmEDu4YA
 ^API to our database
 */
+import SetLevel from '../SetLevel.js';
+import SetType from '../SetType.js'
+
 class GetIdea extends React.Component{
     constructor(){
         super();
@@ -15,6 +18,13 @@ class GetIdea extends React.Component{
             }
         }
     }
+
+    getOptions() {
+        let level = document.querySelector('input[name="level"]:checked').value;
+        let type = document.querySelector('input[name="type"]:checked').value;
+        this.fetchIdea(level);
+    }
+
     fetchIdea(tier){
         fetch("https://api.mlab.com/api/1/databases/bears11/collections/ideas?apiKey=PW2ys0vyNkPOEltLYg4USjGExmEDu4YA")
         .then((response)=>{
@@ -52,7 +62,7 @@ class GetIdea extends React.Component{
                     </h2>
                 <p className = "link-box">
                     {idea.link}
-                    </p>    
+                    </p>
                 </div>
         )
     }
@@ -62,18 +72,15 @@ class GetIdea extends React.Component{
     render(){
         return(
             <div className="outline">
-                <h2>
-                    Select Level
-                    </h2>
-                    <button onClick={()=>{this.fetchIdea("Toucans")}} className="tier-button toucans">
-                        Toucans (Tier-1)
-                        </button>
-                    <button onClick={()=>{this.fetchIdea("Geckos")}} className="tier-button geckos">
-                        Geckos (Tier-2)
-                        </button>
-                    <button onClick={()=>{this.fetchIdea("Bears")}} className="tier-button bears">
-                        Bears (Tier-3)
-                        </button>
+                    <div>
+                        <SetLevel />
+                        <SetType />
+                    </div>
+                    <div className='pg_res'>
+                    <button onClick={()=>{this.getOptions()}} className="getProjectBtn">
+                        Get Project
+                    </button>
+
                         <br/>
                         {this.randomIdea()}
                     <h4>
@@ -82,6 +89,7 @@ class GetIdea extends React.Component{
                         <button onClick={this.callbackToParent.bind(this)} className="tier-button new-idea">
                             Submit Your Idea
                             </button>
+                            </div>
 
                 </div>
         )

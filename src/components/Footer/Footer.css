@@ -1,11 +1,17 @@
 .footer{
-    background-color: #5fce6a;
+    background-color: #66949C;
     min-height: 25vh;
     text-align: center;
+    color: white;
 }
 
-h6{
-    color: black;
+/*h6{
+    color: #D66436;
+}*/
+
+a {
+  color: #FFFEF8;
+  text-decoration: none;
 }
 
 .description{

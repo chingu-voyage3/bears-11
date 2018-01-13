@@ -28,7 +28,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='main'>
         <Header/>
         <Description showAbout = {this.handleOpenAbout}/>
         <ProjectBox/>

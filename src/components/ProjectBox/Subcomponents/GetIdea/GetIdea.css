@@ -1,11 +1,28 @@
 .outline{
-    border: 2px solid black;
+    border: 2px solid #D66436;
     min-height: 65vh;
     width: 50vw;
     margin: auto;
     text-align: center;
     padding: 15px;
     margin-bottom: 5%;
+    /*background-color:rgba(255, 255, 255, 0.9);*/
+}
+
+.pg_res {
+    margin-top: 35%;
+    clear: both;
+}
+
+.getProjectBtn{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    margin: auto;
+    font-size: 100%;
+    background-color: #5fce6a;
+    color: white;
 }
 .tier-button{
     padding: 20px;
