@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
 .header{
     background-color: #D66436;
     top: 0;
     left: 0;
-    height: 5vh;
+    height: 12vh;
     width: 100%;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
+    font-family: 'Cabin Sketch', cursive;
 }

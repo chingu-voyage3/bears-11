@@ -4,7 +4,7 @@ import './Header.css';
 class Header extends React.Component{
     render(){
         return(
-            <div className="header">JustCode
+            <div className="header">Just Code
                 </div>
         )
     }

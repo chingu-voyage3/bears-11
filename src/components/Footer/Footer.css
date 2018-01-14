@@ -1,21 +1,19 @@
 .footer{
-    background-color: #66949C;
-    min-height: 25vh;
+    background-color: #d1d1d1;
+    min-height: 15vh;
     text-align: center;
     color: white;
+    border-top: 1px solid #D66436;
 }
 
-/*h6{
-    color: #D66436;
-}*/
-
 a {
-  color: #FFFEF8;
+  color: #66949C;
   text-decoration: none;
 }
 
 .description{
     padding-top: 10px;
+    color: #D66436;
 }
 
 .inline-content{
@@ -23,3 +21,9 @@ a {
     margin-right: 15px;
     margin-bottom: 0;
 }
+
+/*
+#66949C
+    #FFFEF8
+    #5fce6a
+*/

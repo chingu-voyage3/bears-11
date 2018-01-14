@@ -8,6 +8,10 @@
   float: right;
 }
 
+.options {
+  text-align: right;
+}
+
 .label {
   display: inline;
   margin-right: 5%;
