@@ -18,7 +18,9 @@ mongoose.connection.once('open',()=>{
 var idea = new Schema({
     name: String,
     tier: String,
-    link: String
+    type: String,
+    link: String,
+    description: String
 });
 
 module.exports = mongoose.model("ideas", idea);

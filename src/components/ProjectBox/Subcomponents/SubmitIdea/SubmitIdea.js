@@ -21,9 +21,9 @@ class SubmitIdea extends React.Component{
                 <input className='submit-radio' type="radio" name="tier" value = "Bears"/> Bears
 
                 <h4>Type</h4>
-                <input className='submit-radio' type='radio' name='type' value='clone' />Clone
-                <input className='submit-radio' type='radio' name='type' value='npreq' />Non-profit Request
-                <input className='submit-radio' type='radio' name='type' value='ghiss' />GitHub Issue
+                <input className='submit-radio' type='radio' name='type' value='Clone' />Clone
+                <input className='submit-radio' type='radio' name='type' value='Non-Profit' />Non-profit Request
+                <input className='submit-radio' type='radio' name='type' value='GitHub Issue' />GitHub Issue
 
                 <h4>
                     Url of Example Project <span className='small'>(optional)</span>
@@ -33,7 +33,7 @@ class SubmitIdea extends React.Component{
                 <h4>
                     Project Description <span className='small'>(optional)</span>
                 </h4>
-                <textarea />
+                <textarea name = "description" />
 
                 <br/><br/>
                 <button type = "submit" className="submit-button submit">

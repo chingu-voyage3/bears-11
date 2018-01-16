@@ -17,7 +17,9 @@ router.post('/submitIdea',(req,res)=>{
     new Idea({
         name: req.body.name,
         tier: req.body.tier,
-        link: req.body.link
+        type: req.body.type,
+        link: req.body.link,
+        description: req.body.description
     }).save().then(()=>{
         res.redirect('/')
     });

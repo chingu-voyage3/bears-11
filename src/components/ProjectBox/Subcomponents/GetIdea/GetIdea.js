@@ -34,7 +34,7 @@ class GetIdea extends React.Component{
         })
         .then((data)=>{
             var holderArray = [];
-            var holderObject = {};
+            //var holderObject = {};
             var randomIndex = 0;
 
             data.forEach((x,i)=>{
