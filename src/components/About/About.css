@@ -26,6 +26,11 @@
     color: white;
     position: absolute;
 }
+
+h2 {
+    color: #D66436;
+}
+
 .paragraph{
     margin-left: 10%;
     margin-right: 10%;
@@ -36,17 +41,17 @@
 }
 .toucans-text{
     text-align: center;
-    width: 75px;
+    width: 7vw;
     background-color: #a9fcf9;
 }
 .geckos-text{
     text-align: center;
-    width: 75px;
+    width: 7vw;
     background-color: #d7ff93;
 }
 .bears-text{
     text-align: center;
-    width: 75px;
+    width: 6vw;
     background-color: #ce6d5f;
 }
 
