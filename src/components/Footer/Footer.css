@@ -1,0 +1,19 @@
+.footer{
+    background-color: #5fce6a;
+    min-height: 25vh;
+    text-align: center;
+}
+
+h6{
+    color: black;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.inline-content{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+}

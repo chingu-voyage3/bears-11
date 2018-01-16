@@ -1,0 +1,29 @@
+.outline{
+    border: 2px solid black;
+    min-height: 65vh;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+.submit-button{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    margin-right: 2%;
+    font-size: 100%;
+    background-color: grey;
+}
+.submit-input{
+    background-color: #fffbdd;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    border-radius: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .outline{
+      width: 80%;
+  }
+}

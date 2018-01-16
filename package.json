@@ -1,29 +1,23 @@
 {
-  "name": "bears-11",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chingu-voyage3/bears-11.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chingu-voyage3/bears-11/issues"
-  },
-  "homepage": "https://github.com/chingu-voyage3/bears-11#readme",
+  "name": "bears",
+  "version": "0.1.0",
+  "main": "server.js",
   "dependencies": {
-    "concurrently": "^3.5.1",
-    "dotenv": "^4.0.0",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
-    "mongoose": "^4.13.6",
-    "mongoose-findorcreate": "^2.0.0",
-    "passport": "^0.4.0",
-    "passport-github2": "^0.1.11"
+    "mongoose": "^5.0.0-rc0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start && node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "8.x"
   }
 }
