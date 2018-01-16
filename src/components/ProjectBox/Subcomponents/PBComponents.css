@@ -9,6 +9,8 @@
 }
 
 .options {
+  position: relative;
+  left: -25%;
   text-align: right;
 }
 
