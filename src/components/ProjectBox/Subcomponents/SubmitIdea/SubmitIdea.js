@@ -16,18 +16,30 @@ class SubmitIdea extends React.Component{
                 <h4>
                      Tier
                     </h4>
-                <input type="radio" name="tier" value = "Toucans"/> Toucans<br/><br/>
-                <input type="radio" name="tier" value = "Geckos"/> Geckos<br/><br/>
-                <input type="radio" name="tier" value = "Bears"/> Bears<br/><br/>
+                <input className='submit-radio' type="radio" name="tier" value = "Toucans"/> Toucans
+                <input className='submit-radio' type="radio" name="tier" value = "Geckos"/> Geckos
+                <input className='submit-radio' type="radio" name="tier" value = "Bears"/> Bears
+
+                <h4>Type</h4>
+                <input className='submit-radio' type='radio' name='type' value='clone' />Clone
+                <input className='submit-radio' type='radio' name='type' value='npreq' />Non-profit Request
+                <input className='submit-radio' type='radio' name='type' value='ghiss' />GitHub Issue
+
                 <h4>
-                    URL for Example Project(optional)
+                    Url of Example Project <span className='small'>(optional)</span>
                     </h4>
                 <input name="link" className="submit-input" placeholder="https://example.com"/>
+
+                <h4>
+                    Project Description <span className='small'>(optional)</span>
+                </h4>
+                <textarea />
+
                 <br/><br/>
-                <button type = "submit" className="submit-button">
+                <button type = "submit" className="submit-button submit">
                     Submit Idea
                     </button>
-                <button type="button" onClick={this.callbackToParent.bind(this)} className="submit-button">
+                <button type="button" onClick={this.callbackToParent.bind(this)} className="submit-button back">
                     Back
                     </button>
                 </form>
