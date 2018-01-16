@@ -46,12 +46,6 @@
     background-color: #ffab3d;
     color: white;
 }
-/*.link-box{
-    max-width: 90%;
-    overflow-x: auto;
-    border: 1px dotted grey;
-    margin: auto;
-}*/
 
 h2 {
     display: inline-block;
@@ -59,6 +53,14 @@ h2 {
 
 h4 {
     color: #66949C;
+}
+
+.space {
+    margin: 5vh 0;
+}
+
+.submit-idea {
+    margin: 10vh 0;
 }
 
 @media only screen and (max-device-width: 480px) {

@@ -51,21 +51,27 @@ class GetIdea extends React.Component{
     }
     randomIdea(){
         var idea = this.state.randomIdea;
-        return(
-            <div>
-                <h2>Project: </h2> {idea.name}<br/>
-                <h2>Tier: </h2> {idea.tier}<br/>
-                <h2>Type: </h2> {idea.type}<br/>
-                <h2>Example: </h2>
-                <p className = "link-box">
-                    {idea.link}
-                </p><br/>
-                <h2>Description: </h2>
-                <p className = "desc-box">
-                    {idea.description}
-                </p>
+
+        if (idea.name != '') {
+            return(
+                <div>
+                    <h2>Project: </h2> {idea.name}<br/>
+                    <h2>Tier: </h2> {idea.tier}<br/>
+                    <h2>Type: </h2> {idea.type}<br/>
+                    <h2>Example: </h2>
+                    <p className = "link-box">
+                        {idea.link}
+                    </p><br/>
+
+                    <h2>Description: </h2>
+                    <p className = "desc-box">
+                        {idea.description}
+                    </p>
                 </div>
-        )
+            )
+        } else {
+            return (<div className='space'></div>)
+        }
     }
     callbackToParent(){
         this.props.callback();
@@ -86,12 +92,15 @@ class GetIdea extends React.Component{
                         {this.randomIdea()}
                     </div>
                     <hr />
-                    <h4>
-                        Have a project idea?
-                    </h4>
-                    <button onClick={this.callbackToParent.bind(this)} className="tier-button new-idea">
-                        Submit Your Idea
-                    </button>
+
+                    <div className='submit-idea'>
+                        <h4>
+                            Have a project idea?
+                        </h4>
+                        <button onClick={this.callbackToParent.bind(this)} className="tier-button new-idea">
+                            Submit Your Idea
+                        </button>
+                    </div>
                 </div>
 
         )
