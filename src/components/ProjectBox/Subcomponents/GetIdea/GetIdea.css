@@ -1,0 +1,70 @@
+.outline{
+    border: 2px solid #D66436;
+    min-height: 65vh;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.pg_res {
+    margin-top: 35%;
+    clear: both;
+}
+
+.getProjectBtn{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    margin: auto;
+    font-size: 100%;
+    background-color: #5fce6a;
+    color: white;
+}
+.tier-button{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    margin-right: 2%;
+    font-size: 100%;
+}
+.toucans{
+     background-color: #a9fcf9;
+}
+.geckos{
+    background-color: #d7ff93;
+}
+.bears{
+    background-color: #ce6d5f;
+}
+.new-idea{
+    background-color: #ffab3d;
+    color: white;
+}
+
+h2 {
+    display: inline-block;
+}
+
+h4 {
+    color: #66949C;
+}
+
+.space {
+    margin: 5vh 0;
+}
+
+.submit-idea {
+    margin: 10vh 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .outline{
+      width: 80%;
+  }
+}

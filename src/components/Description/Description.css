@@ -1,0 +1,13 @@
+.description{
+    text-align: center;
+}
+
+.title{
+    font-size: 40px;
+    color: white;
+}
+
+.aboutBtn{
+    float: right;
+    margin-right: 2%;
+}

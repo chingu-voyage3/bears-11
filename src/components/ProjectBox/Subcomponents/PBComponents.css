@@ -1,0 +1,24 @@
+.left {
+  width: 50%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.options {
+  position: relative;
+  left: -25%;
+  text-align: right;
+}
+
+.label {
+  display: inline;
+  margin-right: 5%;
+}
+
+.small {
+  font-size: .7em;
+}
