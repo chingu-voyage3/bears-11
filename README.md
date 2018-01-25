@@ -6,5 +6,6 @@ To use:
 1) git clone
 2) npm install
 3) npm run build
-4) node server
-5) go to localhost:3000
+4) Add db where it says process.env.DB in models/idea.js
+5) node server
+6) go to localhost:3000
