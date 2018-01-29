@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var uri = "mongodb://bears11:bb1@ds135966.mlab.com:35966/bears11";
+var uri = process.env.DB;
 //MongoDB/Mongoose deprecation warning for below.
 mongoose.connect(uri);
 
