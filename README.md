@@ -1,6 +1,6 @@
-#Chingu Voyage 3: Bears-11 Project
+# Chingu Voyage 3: Bears-11 Project
 
-##Random Project Generator
+## Random Project Generator
 
 This app was created to help teams get to coding faster.  Instead of wasting time trying to think of a project to work
 on this app will randomly return a project idea.
